@@ -43,7 +43,7 @@ export default function HeaderTabs() {
             title={tab}
             key={index}
             onPress={() => {
-              setActiveTab(currentTab);
+              setActiveTab(tab);
             }}
             activeTab={activeTab}
           />
