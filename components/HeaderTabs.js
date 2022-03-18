@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
-export default function HeaderTabs() {
+export default function HeaderTabs({ activeTab, setActiveTab }) {
   const [activeTab, setActiveTab] = useState("Delivery");
   const tabs = ["Delivery", "Pickup"];
 

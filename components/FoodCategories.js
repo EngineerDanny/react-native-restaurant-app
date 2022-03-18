@@ -41,37 +41,45 @@ export default function FoodCategories() {
   ];
 
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-      {categoryList.map((category, index) => {
-        return (
-          <View
-            key={index}
-            style={{
-              marginLeft: 20,
-              alignItems: "center",
-              marginRight: categoryList.length - 1 === index ? 20 : 0,
-            }}
-          >
-            <Image
-              source={category.image}
+    <View
+      style={{
+        marginTop: 8,
+        backgroundColor: "#fff",
+        paddingVertical:15,
+      }}
+    >
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        {categoryList.map((category, index) => {
+          return (
+            <View
+              key={index}
               style={{
-                height: 40,
-                width: 50,
-                marginBottom: 5,
-              }}
-            />
-
-            <Text
-              style={{
-                fontWeight: "900",
-                fontSize: 14,
+                marginLeft: 30,
+                alignItems: "center",
+                marginRight: categoryList.length - 1 === index ? 20 : 0,
               }}
             >
-              {category.name}
-            </Text>
-          </View>
-        );
-      })}
-    </ScrollView>
+              <Image
+                source={category.image}
+                style={{
+                  height: 30,
+                  width: 50,
+                  marginBottom: 5,
+                }}
+              />
+
+              <Text
+                style={{
+                  fontWeight: "900",
+                  fontSize: 14,
+                }}
+              >
+                {category.name}
+              </Text>
+            </View>
+          );
+        })}
+      </ScrollView>
+    </View>
   );
 }

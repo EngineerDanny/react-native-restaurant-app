@@ -20,10 +20,7 @@ export default function SearchBar() {
           // 'details' is provided when fetchDetails = true
           console.log(data, details);
         }}
-        query={{
-          key: "YOUR API KEY",
-          language: "en",
-        }}
+        query={{ key: "AIzaSyApAx2_NwovdOyCeloQt3nczvJnhkHvnng" }}
         renderLeftButton={() => (
           <View
             style={{
